@@ -1,43 +1,87 @@
-<!-- 
-    Name: Daniel Newcomer
-    Date: 4/9/2021
-    Course: CIS155
-    Instructor: Linda Epps
-    Assignment: Basic Site for CIS 155
-    Notes:
-
--->
 <!DOCTYPE html>
 <html>
+<head>
+<!-- 
+Name: Daniel Newcomer
+Date 4/25/2021
+Project V1
+-->
+<title>What's Your Ride?</title>
+<!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles) Below is the link to the external CSS style sheet.-->
+<link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<!--M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome)
+Using the basics of HTML as described in module 1 I have created this website-->
+</head>
+
 <body>
-<h1>CIS 155 Project</h1>
-<p>
-    <ul>
-    <li><a href="">V1 Project</a></li>
-    <li><a href="">V2 Project</a></li>
-    <li><a href="">V3 Project</a></li>    
-    <li><a href="">V4 Project</a></li>
-    </ul>
-</p>
-<p>
-    <!-- Version objectives are those HTML/CSS Module Level Objectives that are required for each version demonstrating your understanding and progress within the class. For example, see M02: Project V1 - Basic HTML and CSS for your V1 Submission -->
-    <h3>V1 Module Level Objectives</h3>
-    <ul>
-        <!-- For example, by adding the list item below, you are committing to having it in your assignment and you have placed the M1L06 next to the element in your code so I can easily find it. You will need to do this for all consequent module level objectives. -->
-        <li><b>M1LO6</b> Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome)</li>
-    </ul>
-    <h3>V2 Module Level Objectives</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h3>V3 Module Level Objectives</h3>
-    <ul>
-        <li></li>
-    </ul>
-    <h3>V4 Module Level Objectives</h3>
-    <ul>
-        <li></li>
-    </ul>
-</p>
+<h1> What's Your Ride?</h1>
+<!--M1LO9 Demonstrate the use of inline images (HTML) Behold, an inline image-->
+<img src="motorcycle1.png" alt="Motorcycle.png">
+ <header style="color:white;">
+  <nav>
+   <p1>
+<!--M1LO12 Create navigation using unordered lists (HTML) Below I have used an unordered list for the two current pages and place holders for later pages. M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) This is the navigation link-->
+   <ul>
+<!--M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements) Below I used a psedu-class to change the color of the links before and after being clicked on-->
+    <style>
+a:link {
+  color: tomato;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+
+}
+    </style> 
+     <li><a href= "about.html">About</a></li>
+      <li><a href="">Placeholder #1</a></li>
+      <li><a href="">Placeholder #2</a></li>
+      <li><a href="">Placeholder #3</a></li>
+      <li><a href="">Placeholder #4</a></li>
+      <li><a href="">Placeholder #5</a></li>
+   </ul>
+   </p1>
+  </nav>
+ </header>
+<!--M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles) Below I have embedded CSS to center align the text-->
+p1 {
+  text-align:center;
+}
+<p1>Hello! This website is designed to help anyone interested in or new to motorcycling explore what styles of riding are common and what they think they will enjoy. I have listed 5 basic types of riding, although this is by no means a comprehensive list. Also please note that I have not included scooters of any description in this list. However, if you want something that has an automatic transmssion, then I would recommend looking into a scooter of some variety. Below I have listed the types of riding I will be covering on this site and brief discriptions of each. The links above will take you to a page about each type of riding, where you will find things like: motorcycle recommendations, gear recommendations, any extra training I would recommend outside of the required training for your endorsement, and links to useful videos. </p1>
+ <!--M1LO7 Demonstrate the use of ordered lists (HTML) I have listed the types of riding in an ordered list below.
+ <ol>
+<!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) below is the targeted location link
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) The list here (basically just the bullet points) inherited the formatting from <p1>-->
+  <li><a href="#C">Cruising</a></li>
+  <li><a href="#OF">Off Road</a></li>
+  <li><a href="#TO">Touring</a></li>
+  <li><a href="#A">Adventure</a></li>
+  <li><a href="#TR">Track</a></li>
+ </ol> 
+</p1>
+<!--M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters) I have put some diamond entities around the h2 headers here for some extra flair
+M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors) I used these id selectors for the targeted location ids-->
+<h2 id="C">&diams; Cruising &diams;</h2>
+<p2>Cruising is probably the most common type of riding. It typically involves short to medium length rides where you are back home by the end of the day. If you only plan on riding in fair weather and for a few hours at a time, this is probably a good place to start!</p2>
+
+<h2 id="OF">&diams; Off Road &diams;</h2>
+<p2>When people think about off roading on a motorcycle the first thing most people think of is dirt biking. However off road biking can also consist of things like trail riding and discovery routes. If you don't plan on riding on paved roads or having a street legal bike this would probably be where you want to start looking. </p2>
+
+<h2 id="TO">&diams; Touring &diams;</h2>
+<p2>Touring is similar to cruising, but typically just involves riding for longer periods of time. These are trips like down the coast, cross country, or other multi day trips. If you want to ride a motorcycle to take long vacations and explore this is probably the style for you!</p2>
+
+<h2 id="A">&diams; Adventure &diams;</h2>
+<p2>Adventure bikes are what you get if you can't decide between off roading and cruising, so naturally that is what I own. You sit in an upright position like a dirt bike, but have some of the comforts that cruisers do. You can spend a good few hours on the bike while remaining comfortable, but they also can handle themselves off the beaten path. If you're looking for something more versatile, this is it.</p2>
+
+<h2 id="TR">&diams; Track &diams;</h2>
+<p2>These are going to be the bikes designed for the fastest speed possible. You lean forward over the gas tank so your legs are behind you. These are not very comfortable for very long, so don't get these unless you've got short rides planned or just want to go for maximum speed.</p2>
+<br><br>
+<!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link) Below I used an external link to give credit for the picture I used on the top of my site.
+M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance) This shows prescedence as this line does not inherit the color from <p2> but instead gets the white color from the in line formatting
+M2LO4 Demonstrate external, embedded, and inline styles (HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; see 2-3b Embedded Style Sheets, and 2-3c Inline Styles) Below is inline CSS formatting changing the text color to white-->
+<p2 style="color:white;"> Picture credit <a href="https://www.redbubble.com/people/pdgraphics/works/20219105-orange-motorcycle-silhouette">Motorcycle Picture</a>
 </body>
+
 </html>
